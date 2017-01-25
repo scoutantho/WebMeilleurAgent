@@ -1,0 +1,7 @@
+{
+  "title": "Schema Le Bon Coin",
+  "type": "Bien",
+  "properties": {
+      "type" :  "string"
+  }
+}
