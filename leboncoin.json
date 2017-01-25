@@ -2,6 +2,23 @@
   "title": "Schema Le Bon Coin",
   "type": "Bien",
   "properties": {
-      "type" :  "string"
+    "Name": {
+      "type": "string"
+    },
+    "nbPieces": {
+      "type": "integer"
+    },
+    "prix": {
+      "type": "integer"
+    },
+    "surface": {
+      "type": "integer"
+    },
+    "Ville": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
   }
 }
