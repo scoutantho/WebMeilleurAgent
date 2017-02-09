@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var leboncoin = require('./leboncoin');
+var meilleursagents = require('./meilleursagents');
 var http = require('http');
 var https = require('https');
  var bl = require('bl');
@@ -19,3 +20,4 @@ var https = require('https');
 
 var jsonLBC=leboncoin.getJsonLBC("https://www.leboncoin.fr/ventes_immobilieres/1090422368.htm");
 console.log(jsonLBC);
+//meilleursagents.getDeal(jsonLBC);

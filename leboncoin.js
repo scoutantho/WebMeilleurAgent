@@ -11,8 +11,9 @@ function parseData(_title,_prix,_ville,_bien,_nbPieces,_surface){
 }
 
 
- var title,prix,ville,bien,nbPieces,surface;
+ 
 var getJsonLBC = function getjsonLBC(url){
+  var title,prix,ville,bien,nbPieces,surface,r,res;
 request(url, function(error, response, body) {
   if(error) {
     console.log("Error: " + error);
@@ -41,28 +42,29 @@ $('section.adview').each(function(index){
 
 
 
-/*
+
     console.log("Title: " + title);
     console.log("Prix: " + prix);
     console.log("ville: " + ville);
         console.log("bien: " + bien);
             console.log("nbPieces: " + nbPieces);
                 console.log("surface: " + surface);
-*/
-                var r = parseData(title,prix,ville,bien,nbPieces,surface);
 
-return JSON.stringify(r); //manque le nb de pieces
-
-    //fs.appendFileSync('reddit.txt', title + '\n' + score + '\n' + user + '\n');
-  });
- 
+                 r = parseData(title,prix,ville,bien,nbPieces,surface);
+ //manque le nb de pieces
 
   });
+ //console.log(r);
+ console.log(JSON.stringify(r));
+res= JSON.stringify(r);
+console.log(res);
 
+  });
 
-
+//console.log(r);
+console.log(res); //renvoie undefined 
 //return json 
-
+return res;
 }
 
 module.exports.getJsonLBC=getJsonLBC;
