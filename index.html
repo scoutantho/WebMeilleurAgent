@@ -4,16 +4,19 @@
   <meta charset="utf-8">
   <title>Scrapping Exercise</title>
   <link rel="stylesheet" href="index.css">
-  <script src="final.js"></script>
 </head>
 <body>
-<div class="div">
+<div class="form">
 <h1>Scrapping Exercise</h1>
 <form class="form">
 Please enter the URL from Le Bon Coin : <br>
 <input type="text" name="url">
-<input type ="submit" class ="bouton" name="Go" value ="Go !">
+<input type="submit" class="bouton" name="Go" value ="Go !" onclick="Display('result');">
 </form>
 </div>
+<div class="result" id="result">
+<p>Voici le bilan du site lesmeilleursagents.com : </p>
+</div>
+<script src="index.js"></script>
 </body>
 </html>
