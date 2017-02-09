@@ -57,7 +57,7 @@ $('section.adview').each(function(index){
  //console.log(r);
  console.log(JSON.stringify(r));
 res= JSON.stringify(r);
-console.log(res);
+
 
   });
 
