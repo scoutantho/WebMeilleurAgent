@@ -1,12 +1,12 @@
 {
-  "name"         : "node-web-scrape",
-  "version"      : "0.0.1",
-  "description"  : "Scrape le web.",
-  "main"         : "server.js",
-  "author"       : "Scotch",
-  "dependencies" : {
-    "express"    : "latest",
-    "request"    : "latest",
-    "cheerio"    : "latest"
+  "name": "node-scrape",
+  "version": "0.0.1",
+  "description": "scrape meilleur agent et le bon coin",
+  "main": "app.js",
+  "author": "Antho e max",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "express": "^4.14.1",
+    "request": "^2.79.0"
   }
 }
